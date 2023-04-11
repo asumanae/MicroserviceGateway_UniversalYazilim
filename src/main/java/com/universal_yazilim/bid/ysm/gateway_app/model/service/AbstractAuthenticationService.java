@@ -10,7 +10,7 @@ public abstract class AbstractAuthenticationService
 {
     // ******6
     @Autowired
-    protected JWTProvidable providable;
+    protected JWTProvidable provider;
 
     // ******5 -> AuthenticationManager nesnesini döndüren @Bean tanımlanır.
     // (bkz. dependency injection)
