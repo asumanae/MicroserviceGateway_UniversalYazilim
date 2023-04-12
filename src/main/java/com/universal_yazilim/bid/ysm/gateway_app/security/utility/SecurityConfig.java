@@ -25,7 +25,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class SecurityConfig extends WebSecurityConfigurerAdapter
 {
 
-    // ******7
+    // ******6 -> AbstractAuthenticationService
     @Override
     @Bean(BeanIds.AUTHENTICATION_MANAGER)
     public AuthenticationManager authenticationManagerBean() throws Exception

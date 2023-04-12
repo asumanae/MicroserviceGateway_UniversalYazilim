@@ -26,11 +26,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// ******8 -> AuthenticationService'teki generateJWT() metodu tamamlanır.
 @Component
 public class JWTProvider implements JWTProvidable
 {
 
-    // ***********1
     @Value("${authentication.jwt.expiration-in-ms}")
     private Long JWT_EXPIRATION_MS ;
     private final PrivateKey privateKey;
@@ -162,7 +162,7 @@ public class JWTProvider implements JWTProvidable
         return Jwts.builder().setSubject(authentication.getUsername())
                 .claim("id", authentication.getId())
                 .claim("roles", authorities)
-                .setExpiration(new Date(System.currentTimeMillis() + JWT_EXPIRATION_MS))// su anki zaman + 1 gun
+                .setExpiration(new Date(System.currentTimeMillis() + JWT_EXPIRATION_MS))
                 // burada bir algoritma ile imzaliyoruz using SHA-512 (min key length 2048 - o secildi basta)
                 .signWith(privateKey, SignatureAlgorithm.RS512)
                 .compact();
