@@ -9,6 +9,12 @@ import java.util.List;
 public class TransactionService extends AbstractTransactionService
 {
     @Override
+    public List<JsonElement> findAllByUserID(Integer userID)
+    {
+        return null;
+    }
+
+    @Override
     public List<JsonElement> getAll() {
         return null;
     }
@@ -22,4 +28,6 @@ public class TransactionService extends AbstractTransactionService
     public void deleteByID(Integer id) {
 
     }
+
+
 }
