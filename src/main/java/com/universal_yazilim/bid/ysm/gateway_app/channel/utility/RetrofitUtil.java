@@ -1,13 +1,13 @@
 package com.universal_yazilim.bid.ysm.gateway_app.channel.utility;
 
-import com.google.gson.JsonElement;
 import com.universal_yazilim.bid.ysm.gateway_app.utility.Util;
 import retrofit2.Call;
 import retrofit2.Response;
 
 import java.io.IOException;
-import java.util.List;
 
+
+// ******15 -> TransactionService
 public final class RetrofitUtil
 {
     private RetrofitUtil() {}

@@ -37,7 +37,7 @@ public class TransactionController
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity deleteByID(@PathVariable(name = "id") Integer transactionID)
+    public ResponseEntity<String> deleteByID(@PathVariable(name = "id") Integer transactionID)
     {
         transactionService.deleteByID(transactionID);
 
@@ -49,7 +49,7 @@ public class TransactionController
         JsonElement kullanılır.
      */
     @PostMapping
-    public ResponseEntity save(@RequestBody JsonElement transaction)
+    public ResponseEntity<JsonElement> save(@RequestBody JsonElement transaction)
     {
         return ResponseEntity.ok(transactionService.save(transaction));
     }

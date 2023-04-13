@@ -16,7 +16,7 @@ public interface TransactionCallable
     Call<List<JsonElement>> getAll();
 
     @DELETE("api/transaction/{id}")
-    Call<Void> deleteByID(@Path("id") Integer id);
+    Call<String> deleteByID(@Path("id") Integer id);
 
     @POST("api/transaction")
     Call<JsonElement> save(@Body JsonElement transaction);

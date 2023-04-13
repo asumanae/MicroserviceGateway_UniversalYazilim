@@ -6,7 +6,7 @@ import retrofit2.http.*;
 
 import java.util.List;
 
-
+// ******13 -> ProductService
 // Product ile ilgili olan REST API'nin çağrımı için
 public interface ProductCallable
 {
@@ -14,7 +14,7 @@ public interface ProductCallable
     Call<List<JsonElement>> getAll();
 
     @DELETE("api/product/{id}")
-    Call<Void> deleteByID(@Path("id") Integer id);
+    Call<String> deleteByID(@Path("id") Integer id);
 
     @POST("api/product")
     Call<JsonElement> save(@Body JsonElement product);

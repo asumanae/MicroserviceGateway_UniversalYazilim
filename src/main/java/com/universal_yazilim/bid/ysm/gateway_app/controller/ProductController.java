@@ -8,8 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-// ödev - temel tanımlamalar
-// save(), deleteByID(), getAll()
+// ******11 -> AbstractProductService
 @RequestMapping("gateway/product")
 @RestController
 public class ProductController
