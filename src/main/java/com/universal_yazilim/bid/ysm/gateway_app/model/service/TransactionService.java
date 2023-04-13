@@ -7,7 +7,7 @@ import retrofit2.Call;
 
 import java.util.List;
 
-// ******16 ->
+// ******16 -> RetrofitConfiguration
 @Service
 public class TransactionService extends AbstractTransactionService
 {

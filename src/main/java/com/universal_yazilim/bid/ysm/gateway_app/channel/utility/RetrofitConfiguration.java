@@ -14,7 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.util.concurrent.TimeUnit;
 
-
+// ******17 -> GsonMessageConfiguration sınıfı eklendi.
 @Configuration
 public class RetrofitConfiguration
 {
