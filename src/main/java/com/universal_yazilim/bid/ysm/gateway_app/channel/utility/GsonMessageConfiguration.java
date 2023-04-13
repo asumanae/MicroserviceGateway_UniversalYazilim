@@ -9,7 +9,7 @@ import java.lang.reflect.Type;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-// ******18 ->
+// ******18 -> SecurityConfig
 @Configuration
 public class GsonMessageConfiguration
 {

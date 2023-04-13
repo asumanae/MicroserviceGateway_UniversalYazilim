@@ -26,13 +26,13 @@ public class RetrofitConfiguration
     // 3- RetrofitBuilder
 
     @Bean
-    public TransactionCallable createTransactionCallable(Retrofit.Builder secureKeyBuilder, @Value("transaction.service.url") String baseUrl)
+    public TransactionCallable createTransactionCallable(Retrofit.Builder secureKeyBuilder, @Value("${transaction.service.url}") String baseUrl)
     {
         return secureKeyBuilder.baseUrl(baseUrl).build().create(TransactionCallable.class);
     }
 
     @Bean
-    public ProductCallable createProductCallable(Retrofit.Builder secureKeyBuilder, @Value("product.service.url") String baseUrl)
+    public ProductCallable createProductCallable(Retrofit.Builder secureKeyBuilder, @Value("${product.service.url}") String baseUrl)
     {
         return secureKeyBuilder.baseUrl(baseUrl).build().create(ProductCallable.class);
     }
